@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ground
   layers:
   - Default
   - TransparentFX
@@ -49,4 +50,7 @@ TagManager:
     locked: 0
   - name: Fore
     uniqueID: 2795738357
+    locked: 0
+  - name: Player
+    uniqueID: 870370531
     locked: 0

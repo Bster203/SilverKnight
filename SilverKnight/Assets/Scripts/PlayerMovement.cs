@@ -10,7 +10,9 @@ public class PlayerMovement : MonoBehaviour
     private State state = State.idle;
     private Collider2D coll;
     [SerializeField] private LayerMask ground;
+    
 
+   
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -44,11 +46,13 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, 20f); //the player will jump with a value of 10
             state = State.jumping;
         }
-
+     
         VelocityState();
         anim.SetInteger("state", (int)state);
-    }
 
+        
+    }
+                         
     private void VelocityState()
     {
         if(state == State.jumping)
@@ -78,4 +82,8 @@ public class PlayerMovement : MonoBehaviour
         }
         
     }
+
+    
+
+    
 }
