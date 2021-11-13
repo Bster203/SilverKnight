@@ -53,7 +53,7 @@ public class PlayerCombatController : MonoBehaviour
             {
                 gotInput = false;
                 isAttacking = true;
-                isFirstAttack = !isFirstAttack;
+                isFirstAttack = true; //i changed from isFirstAttack = !isFirstAttack to isFirstAttack = true...otherwise the player will swing once and never able to swing again.
                 anim.SetBool("attack1", true);
                 anim.SetBool("firstAttack", isFirstAttack);
                 anim.SetBool("isAttacking", isAttacking);
